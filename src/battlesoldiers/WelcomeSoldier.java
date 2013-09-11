@@ -13,6 +13,8 @@ import java.util.Scanner;
  *
  * @author gcDataTechnology
  */
+//initial startup window
+//intention is to use this to interface with data storage, player retrieval
 public class WelcomeSoldier extends JFrame{
      Scanner userInput = new Scanner(System.in);//for testing
     boolean complete=false;
