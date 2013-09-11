@@ -1,0 +1,23 @@
+//original for cmdUser input
+
+  System.out.println("Please enter the name of your Soldier");
+        playerName=userInput.nextLine();
+        
+        do{//list teams for player to join
+            System.out.println("Please enter a Team");
+            for(Team i:Team.values()){
+                System.out.println(i);
+            }
+            
+            playerTeam=userInput.nextLine();
+            for(Team i:Team.values()){//test user input for proper selection
+                if(playerTeam.toUpperCase().equals(i.toString())){
+                    teamChoice=i;
+                    tChoice=true;
+                }
+            }
+        }while(!tChoice);
+
+
+//tChoice function
+
