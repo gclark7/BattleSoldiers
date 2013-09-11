@@ -167,8 +167,26 @@ public class BattleSoldiers extends JFrame{
           }
          
         
-     
-       
+     //testing finding specific classes
+        //looking for a specified field present only in soldier and child classes
+       Class[] c=new Class[0];
+       c.getClass();
+       boolean pN;
+       for(int i=0;i<c.length;i++){
+           pN=false;
+           try{
+               c.getClass()[i].getField(playerName);
+               
+               pN=true;
+           }catch(NoSuchFieldException  e){pN=false;}
+           
+           if(pN){
+               System.out.println(c.getClass());
+           }
+           //did not work no output
+           //System.out.println(c);
+       }
+        
         
         
     }//close main

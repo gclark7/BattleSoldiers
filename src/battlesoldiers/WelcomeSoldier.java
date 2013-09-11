@@ -133,7 +133,8 @@ public class WelcomeSoldier extends JFrame{
        setVisible(true);
          
         
-        
+        //trying to find classes inside this package
+       
         
     }
     
