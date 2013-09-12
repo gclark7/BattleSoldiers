@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 
 public class BattleSoldiers extends JFrame{
-
+    
     /**
      * @param args the command line arguments
      */
@@ -30,6 +30,7 @@ public class BattleSoldiers extends JFrame{
     
     
     //transitioned to window Swing environment -- Building 8-11-2013
+    //NEED TO change to start up only remove all other code and assign to specific class controls
         
     public static void main(String[] args) {
         //Creating a window envrionment
@@ -167,25 +168,7 @@ public class BattleSoldiers extends JFrame{
           }
          
         
-     //testing finding specific classes
-        //looking for a specified field present only in soldier and child classes
-       Class[] c=new Class[0];
-       c.getClass();
-       boolean pN;
-       for(int i=0;i<c.length;i++){
-           pN=false;
-           try{
-               c.getClass()[i].getField(playerName);
-               
-               pN=true;
-           }catch(NoSuchFieldException  e){pN=false;}
-           
-           if(pN){
-               System.out.println(c.getClass());
-           }
-           //did not work no output
-           //System.out.println(c);
-       }
+   
         
         
         
